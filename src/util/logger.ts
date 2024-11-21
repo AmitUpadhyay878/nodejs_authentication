@@ -60,7 +60,7 @@ const consoleTransport = (): Array<ConsoleTransportInstance> => {
     return []
 }
 
-const fileLogFormat = format.printf((info) => {
+const fileLogFormat = format.printf((info:any) => {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     const { level, message, timestamp, meta = {} } = info
 
